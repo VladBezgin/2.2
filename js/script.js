@@ -13,12 +13,12 @@ for(let i = 0; i < 7; i++) {
 var arr = ['314', '55254', '744564', '8186', '964', '2464', '4465'];
 
 for (let s = 0; s < 7; s++) {
-	num = arr[s];
-while (arr[s] > 9) {
-	arr[s] = arr[s]/10;
+	num = Number(arr[s]);
+while (Number(arr[s]) > 9) {
+	Number(arr[s]) = Number(arr[s])/10;
 };
-arr[s] = Math.round (arr[s]);
-if ( arr[s] == 3 || arr[s] == 7 ) {
+arr[s] = Math.round (Number(arr[s]));
+if ( Number(arr[s]) == 3 || Number(arr[s]) == 7 ) {
 	console.log(num);
 } 
 }
